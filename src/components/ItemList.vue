@@ -1,11 +1,13 @@
 <template>
- <li>{{character.name}}</li> 
+ <option>{{character.name}}</option> 
 </template>
 
 <script>
+import { eventBus } from '../main.js'
+
 export default {
   name: 'item-list',
-  props: ['character']
+  props: ['character'],
 }
 </script>
 
